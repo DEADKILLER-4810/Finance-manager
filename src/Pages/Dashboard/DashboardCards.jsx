@@ -87,7 +87,7 @@ const formatAmount = (amount) => {
             <svg className='h-5 w-5 text-green-500' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="seagreen" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-right h-4 w-4 text-green-600" data-fg-btfz12="2.29:2.9092:/src/app/pages/dashboard.tsx:103:13:3571:53:e:ArrowDownRight::::::0e1" data-fgid-btfz12=":ren:"><path d="m7 7 10 10"></path><path d="M17 7v10H7"></path></svg>
         </div>
         <div >
-            <h1 className='text-2xl font-bold'>$ {formatAmount(TotalIncome)}</h1>
+            <h1 className='text-2xl font-bold'>₹ {formatAmount(TotalIncome)}</h1>
             <p className='text-[12px] text-gray-500'>Last Month</p>
         </div>
         </div>
@@ -98,7 +98,7 @@ const formatAmount = (amount) => {
             <svg className='h-4 w-4 text-red-500' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-4 w-4 text-red-600" data-fg-btfz23="2.29:2.9092:/src/app/pages/dashboard.tsx:114:13:4069:49:e:ArrowUpRight::::::CDfy" data-fgid-btfz23=":r2p0:"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
         </div>
         <div >
-            <h1 className='text-2xl font-bold'>$ {formatAmount(TotalExpense)}</h1>
+            <h1 className='text-2xl font-bold'>₹ {formatAmount(TotalExpense)}</h1>
             <p className='text-[12px] text-gray-500'>Last Month</p>
         </div>
         </div>
@@ -109,7 +109,7 @@ const formatAmount = (amount) => {
            <svg className='h-4 w-4 text-blue-500' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet h-4 w-4 text-blue-600" data-fg-btfz36="2.29:2.9092:/src/app/pages/dashboard.tsx:127:13:4648:44:e:Wallet::::::ClSR" data-fgid-btfz36=":r2pb:"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path></svg>
         </div>
         <div >
-            <h1 className={`text-2xl font-bold ${SummaryCss}`}>$ {formatAmount(TotalAmount)}</h1>
+            <h1 className={`text-2xl font-bold ${SummaryCss}`}>₹ {formatAmount(TotalAmount)}</h1>
             <p className='text-[12px] text-gray-500'>{Type}</p>
         </div>
         </div>

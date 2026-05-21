@@ -95,7 +95,7 @@ const formatAmount = (amount) => {
             <h1 className='text-[18px] font-semibold'>Summary</h1>
             <div>
                 <h1 className={`font-bold text-[24px] ${SummaryCss}`}>
-  {TotalAmount >= 0 ? '+' : '-'}${formatAmount(TotalAmount)}
+  {TotalAmount >= 0 ? '+' : '-'}₹{formatAmount(TotalAmount)}
 </h1>
                 <h3 className='text-[14px] text-[#6A7282]'>{transactionCount} transactions</h3>
             </div>

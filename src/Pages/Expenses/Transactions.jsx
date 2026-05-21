@@ -122,7 +122,7 @@ const formatAmount = (amount) => {
 
     <div className="flex items-center gap-2 md:gap-4 shrink-0 ml-2">
       <p className="text-red-500 font-semibold text-base md:text-lg">
-        -${formatAmount(transaction.amount)}
+        -₹{formatAmount(transaction.amount)}
       </p>
       <button onClick={() => handleDelete(transaction.id)} className="text-red-500 hover:text-red-700">
         <svg className='w-5 h-5' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
@@ -152,7 +152,7 @@ const formatAmount = (amount) => {
 
     <div className="flex items-center gap-2 md:gap-4 shrink-0 ml-2">
       <p className="text-green-500 font-semibold text-base md:text-lg">
-       +${formatAmount(transaction.amount)}
+       +₹{formatAmount(transaction.amount)}
       </p>
       <button onClick={() => handleDelete(transaction.id)} className="text-red-500 hover:text-red-700">
         <svg className='w-5 h-5' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">

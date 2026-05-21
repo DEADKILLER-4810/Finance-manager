@@ -130,7 +130,7 @@ const AddMultiple = ({ setAddMultipleBudgets }) => {
           <div>
             <p className="text-xs text-gray-500">Total budget</p>
             <p className="text-base font-semibold text-gray-900">
-              ₹{total.toFixed(2)}
+              ${total.toFixed(2)}
             </p>
           </div>
           <div className="flex gap-2">

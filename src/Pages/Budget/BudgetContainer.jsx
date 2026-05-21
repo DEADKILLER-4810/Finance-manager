@@ -108,15 +108,15 @@ const progressColor = progress >= 100 ? 'bg-red-600' : 'bg-black';
                 <div className='flex justify-between gap-3 md:gap-5 items-center'>
                   <div>
                     <h1 className='text-gray-500 text-[13px] md:text-[15px]'>Total Budget</h1>
-                    <h1 className='font-bold text-lg md:text-xl'>{budget.amount}</h1>
+                    <h1 className='font-bold text-lg md:text-xl'>₹{budget.amount}</h1>
                   </div>
                   <div>
                     <h1 className='text-gray-500 text-[13px] md:text-[15px]'>Spent</h1>
-                    <h1 className='font-bold text-blue-500 text-lg md:text-xl'>{spent}</h1>
+                    <h1 className='font-bold text-blue-500 text-lg md:text-xl'>₹{spent}</h1>
                   </div>
                   <div>
                     <h1 className='text-gray-500 text-[13px] md:text-[15px]'>Remaining</h1>
-                    <h1 className='font-bold text-lg md:text-xl'>{remaining}</h1>
+                    <h1 className='font-bold text-lg md:text-xl'>₹{remaining}</h1>
                   </div>
                 </div>
 

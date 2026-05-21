@@ -124,15 +124,15 @@ useEffect(()=>{
             <div className='flex justify-between gap-3 md:gap-5 items-center'>
               <div>
                 <h1 className='text-gray-500 text-[13px] md:text-[15px]'>Total Budget</h1>
-                <h1 className='font-bold text-xl md:text-3xl'>{totalBudget}</h1>
+                <h1 className='font-bold text-xl md:text-3xl'>₹{totalBudget}</h1>
               </div>
               <div>
                 <h1 className='text-gray-500 text-[13px] md:text-[15px]'>Spent</h1>
-                <h1 className='font-bold text-xl md:text-3xl'>{totalSpent}</h1>
+                <h1 className='font-bold text-xl md:text-3xl'>₹{totalSpent}</h1>
               </div>
               <div>
                 <h1 className='text-gray-500 text-[13px] md:text-[15px]'>Remaining</h1>
-                <h1 className='font-bold text-xl md:text-3xl'>{remaning}</h1>
+                <h1 className='font-bold text-xl md:text-3xl'>₹{remaning}</h1>
               </div>
             </div>
             <div className='w-full'>

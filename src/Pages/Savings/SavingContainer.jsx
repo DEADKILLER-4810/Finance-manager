@@ -156,15 +156,15 @@ useEffect(() => {
                     <div className='flex justify-between gap-3 md:gap-5 items-center'>
                       <div>
                         <h1 className='text-gray-500 text-[13px] md:text-[15px]'>Target</h1>
-                        <h1 className='font-bold text-lg md:text-xl text-green-500'>${goal.goalAmount}</h1>
+                        <h1 className='font-bold text-lg md:text-xl text-green-500'>₹{goal.goalAmount}</h1>
                       </div>
                       <div>
                         <h1 className='text-gray-500 text-[13px] md:text-[15px]'>Saved</h1>
-                        <h1 className='font-bold text-lg md:text-xl'>${goal.savedAmount}</h1>
+                        <h1 className='font-bold text-lg md:text-xl'>₹{goal.savedAmount}</h1>
                       </div>
                       <div>
                         <h1 className='text-gray-500 text-[13px] md:text-[15px]'>Remaining</h1>
-                        <h1 className='font-bold text-lg md:text-xl'>${remaining}</h1>
+                        <h1 className='font-bold text-lg md:text-xl'>₹{remaining}</h1>
                       </div>
                     </div>
 
