@@ -50,22 +50,13 @@ const ExpensesTop = ( { isOpen, setIsOpen, setSelectedMonth, selectedMonth, Stat
   
 
   <button 
-    onClick={() => { setDropDown(!DropDown) }}
+    onClick={() => { {setIsOpen(true) , setDropDown(false)} }}
     class="bg-black text-white px-5 py-2 rounded-lg font-medium hover:opacity-90 transition"
   >
    + Add Transaction 
   </button>
 
-  {DropDown == true && (
-    <div class="absolute right-0 mt-2 w-52 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden z-50">
-      <button onClick={() => { {setIsOpen(true) , setDropDown(false)} }} class="w-full text-left px-4 py-3 hover:bg-gray-100 transition">
-        Add Manually
-      </button>
-      {/* <button onClick={()=>{ setStatementOpen(true) , setDropDown(false) }} class="w-full text-left px-4 py-3 hover:bg-gray-100 transition">
-        Transaction Statement
-      </button> */}
-    </div>
-  )}
+  
 </div>
      
     </div>

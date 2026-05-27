@@ -56,6 +56,7 @@ const transactionFilter = transaction.filter((t) => {
     : true;
 
   const transactionMonth = t.date?.slice(0, 7);
+
   const matchesMonth = selectedMonth ? transactionMonth === selectedMonth : true;
 
   return matchesSearch && matchesType && matchesCategory && matchesMonth;
@@ -68,6 +69,7 @@ const formatAmount = (amount) => {
   if (abs >= 100000) return `${(abs / 100000).toFixed(2)}L`
   return abs.toLocaleString('en-IN') // formats 10000 as 10,000
 }
+
 
 
   return (
@@ -103,6 +105,9 @@ const formatAmount = (amount) => {
 )}
 
           {transactionFilter.map((transaction)=>{
+            const [year , month , day] = transaction.date ? transaction.date.split('-') : [null, null, null];
+const newformat = `${day}-${month}-${year}`
+
   if(transaction.type === "Expense"){
     return(
       <div className="mb-4 md:mb-6" key={transaction.id}>
@@ -115,7 +120,7 @@ const formatAmount = (amount) => {
       <div className="min-w-0">
         <h2 className="font-semibold text-base md:text-lg text-gray-800 truncate">{transaction.description}</h2>
         <p className="text-xs md:text-sm text-gray-500">
-          {transaction.category} • {transaction.date}
+          {transaction.category} • {newformat}
         </p>
       </div>
     </div>
